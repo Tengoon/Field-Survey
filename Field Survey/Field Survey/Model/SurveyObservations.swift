@@ -24,7 +24,7 @@ struct Observation: Codable {
     var date: Date
 }
 
-struct FieldObservations: Codable {
+struct SurveyObservations: Codable {
     var status: String
     var observations: [Observation]
 }

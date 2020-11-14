@@ -19,6 +19,7 @@
 		7969DF1C255F5F4A00490474 /* FieldSurveyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969DF1B255F5F4A00490474 /* FieldSurveyDetailsViewController.swift */; };
 		7969DF33255F672300490474 /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 7969DF32255F672300490474 /* field_observations.json */; };
 		7969DF38255F69F000490474 /* SurveyObservations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969DF37255F69F000490474 /* SurveyObservations.swift */; };
+		7969DF3D255F6B1100490474 /* SurveyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969DF3C255F6B1100490474 /* SurveyLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		7969DF1B255F5F4A00490474 /* FieldSurveyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyDetailsViewController.swift; sourceTree = "<group>"; };
 		7969DF32255F672300490474 /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
 		7969DF37255F69F000490474 /* SurveyObservations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyObservations.swift; sourceTree = "<group>"; };
+		7969DF3C255F6B1100490474 /* SurveyLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				7969DF32255F672300490474 /* field_observations.json */,
 				7969DF37255F69F000490474 /* SurveyObservations.swift */,
+				7969DF3C255F6B1100490474 /* SurveyLoader.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				7969DEE0255F57AE00490474 /* SceneDelegate.swift in Sources */,
 				7969DF38255F69F000490474 /* SurveyObservations.swift in Sources */,
 				7969DF17255F5C7000490474 /* FieldSurveyViewController.swift in Sources */,
+				7969DF3D255F6B1100490474 /* SurveyLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
