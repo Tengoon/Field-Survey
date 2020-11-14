@@ -56,11 +56,20 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMn-kr-mIG">
+                                                    <rect key="frame" x="95" y="34" width="319" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="GT0-Wz-DZl" firstAttribute="centerY" secondItem="fJi-r0-Bmi" secondAttribute="centerY" id="75L-bj-6mi"/>
                                                 <constraint firstAttribute="trailing" secondItem="FsN-23-uUK" secondAttribute="trailing" id="QpW-BM-sUd"/>
+                                                <constraint firstItem="XMn-kr-mIG" firstAttribute="bottom" secondItem="GT0-Wz-DZl" secondAttribute="bottom" id="Rch-KV-cdI"/>
                                                 <constraint firstItem="FsN-23-uUK" firstAttribute="top" secondItem="GT0-Wz-DZl" secondAttribute="top" id="VnA-7a-CwB"/>
+                                                <constraint firstAttribute="trailing" secondItem="XMn-kr-mIG" secondAttribute="trailing" id="ghf-DJ-kDy"/>
+                                                <constraint firstItem="XMn-kr-mIG" firstAttribute="leading" secondItem="GT0-Wz-DZl" secondAttribute="trailing" constant="25" id="kiQ-G5-KA0"/>
                                                 <constraint firstItem="GT0-Wz-DZl" firstAttribute="leading" secondItem="fJi-r0-Bmi" secondAttribute="leadingMargin" id="qRK-lt-HjX"/>
                                                 <constraint firstItem="FsN-23-uUK" firstAttribute="leading" secondItem="GT0-Wz-DZl" secondAttribute="trailing" constant="25" id="t05-Ws-onv"/>
                                             </constraints>
