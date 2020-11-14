@@ -17,6 +17,7 @@
 		7969DF03255F57AF00490474 /* Field_SurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969DF02255F57AF00490474 /* Field_SurveyUITests.swift */; };
 		7969DF17255F5C7000490474 /* FieldSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969DF16255F5C7000490474 /* FieldSurveyViewController.swift */; };
 		7969DF1C255F5F4A00490474 /* FieldSurveyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969DF1B255F5F4A00490474 /* FieldSurveyDetailsViewController.swift */; };
+		7969DF33255F672300490474 /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 7969DF32255F672300490474 /* field_observations.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7969DF04255F57AF00490474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7969DF16255F5C7000490474 /* FieldSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyViewController.swift; sourceTree = "<group>"; };
 		7969DF1B255F5F4A00490474 /* FieldSurveyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyDetailsViewController.swift; sourceTree = "<group>"; };
+		7969DF32255F672300490474 /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		7969DEDC255F57AE00490474 /* Field Survey */ = {
 			isa = PBXGroup;
 			children = (
+				7969DF29255F66B400490474 /* Model */,
 				7969DEDD255F57AE00490474 /* AppDelegate.swift */,
 				7969DEDF255F57AE00490474 /* SceneDelegate.swift */,
 				7969DEE3255F57AE00490474 /* Main.storyboard */,
@@ -132,6 +135,14 @@
 				7969DF04255F57AF00490474 /* Info.plist */,
 			);
 			path = "Field SurveyUITests";
+			sourceTree = "<group>";
+		};
+		7969DF29255F66B400490474 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7969DF32255F672300490474 /* field_observations.json */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7969DEED255F57AE00490474 /* LaunchScreen.storyboard in Resources */,
+				7969DF33255F672300490474 /* field_observations.json in Resources */,
 				7969DEEA255F57AE00490474 /* Assets.xcassets in Resources */,
 				7969DEE5255F57AE00490474 /* Main.storyboard in Resources */,
 			);
