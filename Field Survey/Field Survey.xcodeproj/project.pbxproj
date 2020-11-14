@@ -16,6 +16,7 @@
 		7969DEF8255F57AF00490474 /* Field_SurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969DEF7255F57AF00490474 /* Field_SurveyTests.swift */; };
 		7969DF03255F57AF00490474 /* Field_SurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969DF02255F57AF00490474 /* Field_SurveyUITests.swift */; };
 		7969DF17255F5C7000490474 /* FieldSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969DF16255F5C7000490474 /* FieldSurveyViewController.swift */; };
+		7969DF1C255F5F4A00490474 /* FieldSurveyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969DF1B255F5F4A00490474 /* FieldSurveyDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7969DF02255F57AF00490474 /* Field_SurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field_SurveyUITests.swift; sourceTree = "<group>"; };
 		7969DF04255F57AF00490474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7969DF16255F5C7000490474 /* FieldSurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyViewController.swift; sourceTree = "<group>"; };
+		7969DF1B255F5F4A00490474 /* FieldSurveyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				7969DEEE255F57AE00490474 /* Info.plist */,
 				7969DEE6255F57AE00490474 /* Field_Survey.xcdatamodeld */,
 				7969DF16255F5C7000490474 /* FieldSurveyViewController.swift */,
+				7969DF1B255F5F4A00490474 /* FieldSurveyDetailsViewController.swift */,
 			);
 			path = "Field Survey";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7969DEDE255F57AE00490474 /* AppDelegate.swift in Sources */,
+				7969DF1C255F5F4A00490474 /* FieldSurveyDetailsViewController.swift in Sources */,
 				7969DEE8255F57AE00490474 /* Field_Survey.xcdatamodeld in Sources */,
 				7969DEE0255F57AE00490474 /* SceneDelegate.swift in Sources */,
 				7969DF17255F5C7000490474 /* FieldSurveyViewController.swift in Sources */,

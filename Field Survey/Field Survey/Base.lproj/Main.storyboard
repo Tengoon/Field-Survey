@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="-135" y="-297"/>
         </scene>
-        <!--View Controller-->
+        <!--Field Survey Details View Controller-->
         <scene sceneID="FPq-pz-pQy">
             <objects>
-                <viewController id="g4R-W9-x3r" sceneMemberID="viewController">
+                <viewController id="g4R-W9-x3r" customClass="FieldSurveyDetailsViewController" customModule="Field_Survey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UbR-9h-kez">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
