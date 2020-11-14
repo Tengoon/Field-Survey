@@ -9,10 +9,13 @@ import UIKit
 
 class FieldSurveyDetailsViewController: UIViewController {
 
-    @IBOutlet weak var fieldIconImageView: UIImageView!
-    @IBOutlet weak var creatureLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var createLabel: UILabel!
+    
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var locationTextView: UITextView!
+    
+    @IBOutlet weak var descField: UITextView!
     
     var fieldObservation : Observation?
     
@@ -27,10 +30,11 @@ class FieldSurveyDetailsViewController: UIViewController {
         self.title = "Observation"
         
         if let fieldObservation = fieldObservation {
-                   creatureLabel.text = fieldObservation.title
-                   timeLabel.text = dateFormatter.string(from: fieldObservation.date)
-                   fieldIconImageView.image = UIImage(named: fieldObservation.classification.rawValue)
-                   locationTextView.text = fieldObservation.description
+                    createLabel.text = fieldObservation.title
+                    timeLabel.text = dateFormatter.string(from: fieldObservation.date)
+                    imageView.image = UIImage(named: fieldObservation.classification.rawValue)
+                    descField.text = fieldObservation.description
+        
         
         // Do any additional setup after loading the view.
     }
@@ -48,3 +52,4 @@ class FieldSurveyDetailsViewController: UIViewController {
 
 }
 }
+

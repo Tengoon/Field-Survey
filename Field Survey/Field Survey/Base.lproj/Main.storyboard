@@ -99,6 +99,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5DX-7F-gtT"/>
+                    <connections>
+                        <outlet property="surveyTableView" destination="vCa-0G-GOl" id="JnA-aM-Bbc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0n-jj-oeP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,11 +159,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="cDZ-7n-N6W"/>
                     <connections>
-                        <outlet property="creatureLabel" destination="RRD-dg-qJ8" id="kLP-rC-E6Q"/>
-                        <outlet property="fieldIconImageView" destination="qoA-WN-KmL" id="7m2-UN-yGs"/>
-                        <outlet property="fieldsurveryIcon" destination="qoA-WN-KmL" id="zhF-nS-VKt"/>
-                        <outlet property="locationTextView" destination="l2d-0M-p7z" id="sK2-wx-cV1"/>
-                        <outlet property="timeLabel" destination="wBS-Zt-Lkw" id="sjc-FO-R84"/>
+                        <outlet property="createLabel" destination="RRD-dg-qJ8" id="qsL-4a-jAP"/>
+                        <outlet property="descField" destination="l2d-0M-p7z" id="7vq-gx-RZf"/>
+                        <outlet property="imageView" destination="qoA-WN-KmL" id="yy6-So-pmb"/>
+                        <outlet property="timeLabel" destination="wBS-Zt-Lkw" id="HOR-eF-bZc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSM-zO-oB0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
