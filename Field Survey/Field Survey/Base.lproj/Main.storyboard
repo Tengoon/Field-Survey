@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-949" y="-297"/>
         </scene>
-        <!--View Controller-->
+        <!--Field Survey View Controller-->
         <scene sceneID="70d-Qp-r7B">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="fU0-Si-vhL" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="fU0-Si-vhL" customClass="FieldSurveyViewController" customModule="Field_Survey" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dkq-vQ-doy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,6 +43,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="g4R-W9-x3r" kind="show" id="3Iz-pT-gMe"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -62,6 +65,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0n-jj-oeP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-135" y="-297"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FPq-pz-pQy">
+            <objects>
+                <viewController id="g4R-W9-x3r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UbR-9h-kez">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="i35-iU-gXG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cDZ-7n-N6W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jSM-zO-oB0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="-297"/>
         </scene>
     </scenes>
     <resources>
