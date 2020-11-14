@@ -9,6 +9,14 @@ import UIKit
 
 class FieldSurveyDetailsViewController: UIViewController {
 
+    @IBOutlet weak var fieldIconImageView: UIImageView!
+    
+    @IBOutlet weak var creatureLabel: UILabel!
+    
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    @IBOutlet weak var locationTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -49,6 +49,10 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="fU0-Si-vhL" id="WKM-Mh-f3c"/>
+                                    <outlet property="delegate" destination="fU0-Si-vhL" id="a83-rd-ICV"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Tsx-uB-OPE"/>
@@ -73,17 +77,67 @@
                     <view key="view" contentMode="scaleToFill" id="UbR-9h-kez">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qoA-WN-KmL">
+                                <rect key="frame" x="20" y="98" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="8Te-Gv-jKw"/>
+                                    <constraint firstAttribute="height" constant="50" id="j9Y-PP-oJo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRD-dg-qJ8">
+                                <rect key="frame" x="28" y="163" width="386" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBS-Zt-Lkw">
+                                <rect key="frame" x="28" y="192" width="42" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="l2d-0M-p7z">
+                                <rect key="frame" x="28" y="228" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="i35-iU-gXG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="i35-iU-gXG" firstAttribute="trailing" secondItem="wBS-Zt-Lkw" secondAttribute="trailing" id="F0Z-BD-TJB"/>
+                            <constraint firstItem="i35-iU-gXG" firstAttribute="trailing" secondItem="RRD-dg-qJ8" secondAttribute="trailing" id="FHU-rw-Mn5"/>
+                            <constraint firstItem="wBS-Zt-Lkw" firstAttribute="top" secondItem="RRD-dg-qJ8" secondAttribute="bottom" constant="15" id="HRc-Nc-gzp"/>
+                            <constraint firstItem="RRD-dg-qJ8" firstAttribute="top" secondItem="qoA-WN-KmL" secondAttribute="bottom" constant="15" id="b79-4x-BeM"/>
+                            <constraint firstItem="qoA-WN-KmL" firstAttribute="leading" secondItem="i35-iU-gXG" secondAttribute="leading" constant="20" id="bhp-p7-EBG"/>
+                            <constraint firstItem="RRD-dg-qJ8" firstAttribute="leading" secondItem="i35-iU-gXG" secondAttribute="leading" constant="28" id="qBc-8q-Kvu"/>
+                            <constraint firstItem="wBS-Zt-Lkw" firstAttribute="leading" secondItem="i35-iU-gXG" secondAttribute="leading" constant="28" id="r60-2f-3bJ"/>
+                            <constraint firstItem="qoA-WN-KmL" firstAttribute="top" secondItem="i35-iU-gXG" secondAttribute="top" constant="10" id="w07-sa-W3i"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cDZ-7n-N6W"/>
+                    <connections>
+                        <outlet property="creatureLabel" destination="RRD-dg-qJ8" id="kLP-rC-E6Q"/>
+                        <outlet property="fieldIconImageView" destination="qoA-WN-KmL" id="7m2-UN-yGs"/>
+                        <outlet property="fieldsurveryIcon" destination="qoA-WN-KmL" id="zhF-nS-VKt"/>
+                        <outlet property="locationTextView" destination="l2d-0M-p7z" id="sK2-wx-cV1"/>
+                        <outlet property="timeLabel" destination="wBS-Zt-Lkw" id="sjc-FO-R84"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSM-zO-oB0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="664" y="-297"/>
+            <point key="canvasLocation" x="663.768115942029" y="-297.32142857142856"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
